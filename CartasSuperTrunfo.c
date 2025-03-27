@@ -1,5 +1,5 @@
 #include <stdio.h>
-Novo m
+
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
@@ -14,6 +14,9 @@ int Populacao;
 float Area;
 float PIB;
 int Pontos;
+float Densidade;
+float Per;
+float Poder;
 
 printf ("Estado: \n");
 scanf("%s", &Estado);
@@ -44,7 +47,20 @@ printf("Area: %f\n", Area);
 printf("PIB: %f\n", PIB);
 printf("Pontos turisticos: %d\n", Pontos);
 
-printf("Novo commit\n")
+Densidade =(float) (Populacao / Area);
+
+Per =(float) (PIB / Populacao);
+
+printf("A Densidade é: %.1f", Densidade);
+
+printf("O PIB per capita é: %.1f", Per);
+
+
+
+
 
     return 0;
 }
+
+
+
